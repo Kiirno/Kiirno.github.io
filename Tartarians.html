@@ -13,10 +13,17 @@
 
 <script>
 $(document).ready(function(){
-	$(".9").click(function(){
+	$(".hov").click(function(){
 		$(".eleRoyalty").fadeToggle();
+	});
+	$('.hov').mouseover(function(e){
+		$('.hov').css('color', 'red');
+	});
+	$('.hov').mouseout(function(e){
+		$('.hov').css('color', 'black');
+	});
 });
-});
+
 </script>
 	
 </head>
@@ -30,7 +37,7 @@ However, for many of these, a pretender with paths will be needed.<p>
 <br>
 <br>
 <hr>
-<h2 class="9">Elemental Royalty</h2>
+<h2 class="hov">Elemental Royalty</h2>
 
 <div class="eleRoyalty">
 <h3 id="fire">King of Elemental Fire.</h3>
