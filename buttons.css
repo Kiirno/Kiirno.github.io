@@ -34,4 +34,10 @@ button:active {
    
 div {
 	display:none;
+	border: solid;
+	margin: 5px;
+	margin-bottom: 1em;
+	border-radius: 8px;
+	padding: 5px;
+	border-color: #ffd480;
 }
