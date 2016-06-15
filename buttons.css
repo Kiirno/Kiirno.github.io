@@ -35,10 +35,9 @@ button:active {
 .item {
 	display:none;
 	border: solid;
-	margin: 5px;
 	margin-bottom: 1em;
 	border-radius: 8px;
-	padding: 5px;
+	padding: 4px;
 	border-color: #ffd480;
 }
 
