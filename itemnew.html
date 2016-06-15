@@ -4,30 +4,34 @@
 	<title></title>
 	<meta charset="UTF-8">	
 	<link rel="stylesheet" type="text/css" href="Sauromatia_Guide.css">
-
 	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 <script>
 $(document).ready(function(){
     $(".btn1").click(function(){
-        $("h4").hide();
+        $("div").hide();
 		$(".artifact").show();
     });
     $(".btn2").click(function(){
-        $("h4").hide();
+        $("div").hide();
 		$(".thug").show();
     });
     $(".btn3").click(function(){
-        $("h4").hide();
+        $("div").hide();
 		$(".booster").show();
     });
     $(".btn4").click(function(){
-        $("h4").show();
+        $("div").show();
     });
 
 });
 </script>
+
+<style>
+.item {color:blue;}
+</style>
 	
 </head>
 
@@ -40,25 +44,102 @@ $(document).ready(function(){
 <button class="btn3">View Boosters</button>
 <button class="btn4">View All Items</button><br><br>
 
-<h4 class="booster item">Thistle Mace</h4>
-<h4 class="item">Clam</h4>
-<h4 class="booster item">Skull Staff</h4>
-<h4 class="booster item">Crystal Coin</h4>
-<h4 class="booster item">Moonvine Bracelet</h4>
-<h4 class="booster thug item">Starshine Skullcap</h4>
-<h4 class="booster item">Skullface</h4>
-<h4 class="item">Black Bow of Botulf</h4>
-<h4 class="booster item">Armor of Thorns</h4>
-<h4 class="booster item">Ring of Sorcery</h4>
-<h4 class="booster item">Ring of Wizardry</h4>
-<h4 class="booster artifact item">Black Book of Secrets</h4>
-<h4 class="booster artifact item">Tome of Gaia</h4>
-<h4 class="booster artifact item">Sceptre of Dark Regency</h4>
-<h4 class="artifact item">The Sword of Aurgelmer</h4>
-<h4 class="thug item">Amulet of Antimagic</h4>
-<h4 class="thug item">Ring of Regeneration</h4>
-<h4 class="thug item">Vine Shield</h4>
-<h4 class="thug item">Frost Brand</h4>
+
+<div class="booster item" id="thisMace">
+<h4>Thistle Mace</h4>
+<br>
+</div>
+
+<div class="item" id="clam">
+<h4>Clam</h4>
+<br>
+</div>
+
+<div class="booster item" id="sklStff">
+<h4>Skull Staff</h4>
+<br>
+</div>
+
+<div class="booster item" id="crysCoin">
+<h4>Crystal Coin</h4>
+<br>
+</div>
+
+<div class="booster item" id="moonBrace">
+<h4>Moonvine Bracelet</h4>
+<br>
+</div>
+
+<div class="booster thug item" id="starCap">
+<h4>Starshine Skullcap</h4>
+<br>
+</div>
+
+<div class="booster item" id="skullface">
+<h4>Skullface</h4>
+<br>
+</div>
+
+<div class="item" id="blkBow">
+<h4>Black Bow of Botulf</h4>
+<br>
+</div>
+
+<div class="booster item" id="thrnArmor">
+<h4>Armor of Twisting Thorns</h4>
+<br>
+</div>
+
+<div class="booster item" id="socRing">
+<h4>Ring of Sorcery</h4>
+<br>
+</div>
+
+<div class="booster item" id="wizRing">
+<h4>Ring of Wizardry</h4>
+<br>
+</div>
+
+<div class="booster artifact item" id="blkBook">
+<h4>Black Book of Secrets</h4>
+<br>
+</div>
+
+<div class="booster artifact item" id="gaiTome">
+<h4>Tome of Gaia</h4>
+<br>
+</div>
+
+<div class="booster artifact item" id="drkScept">
+<h4>Sceptre of Dark Regency</h4>
+<br>
+</div>
+
+<div class="artifact item" id="swrdAurgelmer">
+<h4>The Sword of Aurgelmer</h4>
+<br>
+</div>
+
+<div class="thug item" id="amui">
+<h4>Amulet of Antimagic</h4>
+<br>
+</div>
+
+<div class="thug item" id="ringRegen">
+<h4>Ring of Regeneration</h4>
+<br>
+</div>
+
+<div class="thug item" id="shldVine">
+<h4>Vine Shield</h4>
+<br>
+</div>
+
+<div class="thug item" id="brndFrist">
+<h4>Frost Brand</h4>
+<br>
+</div>
+
 </section>
 
 <a id="return" href="Sauromatia_Guide.html"> Go back! </a>
