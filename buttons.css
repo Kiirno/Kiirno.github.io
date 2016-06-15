@@ -44,3 +44,7 @@ button:active {
 .sort {
 	text-align: center;
 }
+
+img {
+	padding: 6px;
+}
