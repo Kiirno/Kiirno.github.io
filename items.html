@@ -1,58 +1,184 @@
 <!doctype html>
-
 <html>
-
 <head>
-	<title>Items List</title>
+	<title></title>
+	<meta charset="UTF-8">	
 	<link rel="stylesheet" type="text/css" href="Sauromatia_Guide.css">
-	<meta charset="UTF-8">
 	
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $(".item").hide();
+		$(".artifact").show();
+    });
+    $(".btn2").click(function(){
+        $(".item").hide();
+		$(".thug").show();
+    });
+    $(".btn3").click(function(){
+        $(".item").hide();
+		$(".booster").show();
+    });
+    $(".btn4").click(function(){
+        $(".item").show();
+    });
+
+});
+</script>
+
+
+	<link rel="stylesheet" type="text/css" href="buttons.css">
+
+	
 </head>
 
 <body>
 
 <section>
-<h1>Items</h1>
+<h1>Items</h1><br><br>
 
+<div class="sort">
+<button class="btn1">View Artifacts</button> 
+<button class="btn2">View Kit</button>
+<button class="btn3">View Boosters</button>
+<button class="btn4">View All Items</button><br><br>
+</div>
+
+<div class="booster item" id="thisMace">
 <h4>Thistle Mace</h4>
+<img align="left" alt="Thistle Mace" src="items/thisMace.png"> 
+<p>10 Nature Gems<br>
+N2 forging<br>
++1 Nature Booster<br><br>
+Waddup boi</p>
+</div>
+
+<div class="item" id="clam">
 <h4>Clam</h4>
+<img align="left" alt="clams" src="items/clam.png" width="77" height="77"> 
+<p>5 Water Gems, 5 Nature Gems.<br>
+W1N1 Forging.<br><br><br>
+
+Provides 2 temporary Astral Pearls. You should have at the very least 1 of these in every Soothsayer-depending army.<br>
+There are a few combat spells requiring Astral Pearls a Sauromatian player should be often casting in every pitched battle.<br>
+These are Light of the Northern Star and Power of the Spheres, followed by Will of the Fates, and finally Antimagic and Doom.</p>
+</div>
+
+<div class="booster item" id="sklStff">
 <h4>Skull Staff</h4>
+<img align="left" alt="clams" src="items/clam.png" width="77" height="77"> 
+<p>10 Death Gems.<br>
+D2 Forging<br>
++1 Death Booster<br><br>
+
+I tend to give these to battle caster Witch Kings<br>
+Trying to either achieve the high level D spells, or lowering casting cost enough to cast multiple important spells.<br>
+Giving Skull Staves to Enaris tends not to help very much; either by hurting Comm fatigue distribution, or being a waste of Dgems.
+</p>
+</div>
+
+<div class="booster item" id="crysCoin">
 <h4>Crystal Coin</h4>
+<img align="left" alt="Crystal Coin" src="items/crysCoin.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster item" id="moonBrace">
 <h4>Moonvine Bracelet</h4>
+<img align="left" alt="Moonvine Bracelet" src="items/moonBrace.png" width="77" height="77"> 
+<p>15 Nature Gems, 5 Astral Pearls.<br>
+N3S1 Forging<br>
++1 N Booster<br><br>
+To make these requires an Enari with both Armor of Twisting Thorns and Thistle maces.<br>
+They have rather high costs, so use these to reach high N rituals or make use of N scaling rituals like Summon Lamias.</p>
+</div>
+
+<div class="booster thug item" id="starCap">
 <h4>Starshine Skullcap</h4>
+<img align="left" alt="Starshine Skullcap" src="items/starCap.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster item" id="skullface">
 <h4>Skullface</h4>
+<img align="left" alt="Skullface" src="items/skullface.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="item" id="blkBow">
 <h4>Black Bow of Botulf</h4>
-<h4>Armor of Thorns</h4>
+<img align="left" alt="Black Bow of Botulf" src="items/blkBow.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster item" id="thrnArmor">
+<h4>Armor of Twisting Thorns</h4>
+<img align="left" alt="Armor of Twisting Thorns" src="items/thrnArmor.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster item" id="socRing">
 <h4>Ring of Sorcery</h4>
+<img align="left" alt=">Ring of Sorcery" src="items/socRing.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster item" id="wizRing">
 <h4>Ring of Wizardry</h4>
-<h4></h4>
+<img align="left" alt="Ring of Wizardry" src="items/wizRing.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
 
-
-
-
-
-<h1>Artifacts</h1>
-
+<div class="booster artifact item" id="blkBook">
 <h4>Black Book of Secrets</h4>
+<img align="left" alt="Black Book of Secrets" src="items/blkBook.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster artifact item" id="gaiTome">
 <h4>Tome of Gaia</h4>
-<h4>Caractor the Pocket Lich</h4>
+<img align="left" alt="Tome of Gaia" src="items/gaiTome.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="booster artifact item" id="drkScept">
 <h4>Sceptre of Dark Regency</h4>
+<img align="left" alt="Sceptre of Dark Regency" src="items/drkScept.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="artifact item" id="swrdAurgelmer">
 <h4>The Sword of Aurgelmer</h4>
-<h4></h4>
-<h4></h4>
-<h4></h4>
+<img align="left" alt="The Sword of Aurgelmer" src="items/swrdAurgelmer.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
 
-<h1>Thug/SC kit</h1>
+<div class="thug item" id="amui">
 <h4>Amulet of Antimagic</h4>
+<img align="left" alt="Amulet of Antimagic" src="items/amui.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="thug item" id="ringRegen">
 <h4>Ring of Regeneration</h4>
+<img align="left" alt="Ring of Regeneration" src="items/ringRegen.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="thug item" id="shldVine">
 <h4>Vine Shield</h4>
+<img align="left" alt="Vine Shield" src="items/shldVine.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
+
+<div class="thug item" id="brndFrost">
 <h4>Frost Brand</h4>
-<h4></h4>
-<h4></h4>
-
-
-
+<img align="left" alt="Frost Brand" src="items/brndFrost.png" width="77" height="77"> 
+<p>placeholder<br><br><br></p>
+</div>
 
 </section>
 
