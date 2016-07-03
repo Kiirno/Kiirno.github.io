@@ -22,6 +22,15 @@ $(document).ready(function(){
 	$('.hov').mouseout(function(e){
 		$('.hov').css('color', 'black');
 	});
+	$(".dHov").click(function(){
+		$(".dSummons").fadeToggle();
+	});
+	$(".nHov").click(function(){
+		$(".nSummons").fadeToggle();
+	});
+	$(".bHov").click(function(){
+		$(".bSummons").fadeToggle();
+	});
 });
 
 </script>
@@ -30,12 +39,16 @@ $(document).ready(function(){
 td {
 	padding: 2px 10px 2px 10px;
 }
-
+.dSummons, .eleRoyalty, .nSummons, .bSummons {
+	display: none;
+}
 </style>
 	
 </head>
 <body>
 <section>
+
+<div style="text-align:center;">
 <h1>Thugs and Super Combatants.</h1>
 
 <p>As a top research nation with many good summons in conjuration, Sauromatia can expect to get a few of the elemental royalties.<br>
@@ -43,6 +56,7 @@ In this section we will go over how to make a cost-efficient thug, a strong supe
 However, for many of these, a pretender with paths will be needed.<p>
 <br>
 <br>
+</div>
 <hr>
 <h2 class="hov">Elemental Royalty</h2>
 
@@ -58,10 +72,10 @@ They also have darkvision.</p>
 <h3 id="water">Queen of Elemental Water</h3>
 
 <h3 id="earth">King of Elemental Earth</h3>
-</div>
 <hr>
+</div>
 
-<h2>Death Summons</h2>
+<h2 class="dHov">Death Summons</h2>
 
 <div class="dSummons">
 
@@ -173,15 +187,15 @@ They also have darkvision.</p>
 <td><b>Cost:</b> 30 Death Gems<td>
 <td><b>Summon:</b> Lich commander </td>
 </tr></table>
-<img src="images/summons/lich.png">
+<img src="images/summons/sprtMast.png">
 </div>
 
-
-</div>
 
 <hr>
+</div>
 
-<h2>Nature Summons</h2>
+
+<h2 class="nHov">Nature Summons</h2>
 
 <div class="nSummons">
 
@@ -205,11 +219,11 @@ They also have darkvision.</p>
 
 <h3>Awaken Ivy King </h3>
 <p> </p>
+<hr>
 </div>
 
-<hr>
 
-<h2 id="blood">Blood Summons</h2>
+<h2 class="bHov" id="blood">Blood Summons</h2>
 <div class="bSummons">
 
 <h3>Vampires </h3>
